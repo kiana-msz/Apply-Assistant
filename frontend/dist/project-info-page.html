@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="initial-scale=1, width=device-width">
+    <link rel="stylesheet" href="/index.689f5f05.css">
+    <link rel="stylesheet" href="/project-info-page.2aac11b9.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Times New Roman:ital,wght@0,400;0,700;1,400&display=swap">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@900&display=swap">
+  </head>
+  <body>
+    <script src="/index.e78faa8c.js"></script>
+    <script type="text/javascript">var encodedObject = window.location.search.split("===")[1];
+var encodedPositionObject = window.location.search.split("===")[2];
+var encodedPositionName = window.location.search.split("===")[3];
+var encodedPositionDetaile = window.location.search.split("===")[4];
+var decodedObject = decodeURIComponent(encodedObject);
+var parsedObject = JSON.parse(decodedObject);
+var decodedObjectName = decodeURIComponent(encodedPositionName);
+var parsedObjectName = JSON.parse(decodedObjectName);
+var decodedObjectDetaile = decodeURIComponent(encodedPositionDetaile);
+var parsedObjectDetaile = JSON.parse(decodedObjectDetaile);
+var projectsObject = new proObject(parsedObject.projectList, parsedObject.fieldFilter, parsedObject.universityFilter);
+window.projectsObject = projectsObject;
+window.position = encodedPositionObject;
+window.positionName = parsedObjectName;
+window.Detaile = parsedObjectDetaile;
+
+</script>
+    <div class="project-info-page">
+      <div class="frame-parent6">
+        <div class="frame-parent7">
+          <button class="vector-wrapper">
+            <img class="vector-icon" alt="" src="/vector-14.2c154f19.svg" onclick="window.projectsObject.back()">
+          </button>
+          <img class="aa-icon" alt="" src="/aa.d3fc8c6b.svg">
+        </div>
+        <div class="component-1">
+          <div class="component-1-inner">
+            <div class="agile-optimizations-in-project-parent">
+              <strong id="positionNameValue" class="agile-optimizations-in"> </strong>
+              <div class="i-hope-this-message-finds-you-parent">
+                <h2 class="i-hope-this-container">
+                  <p id="datailContent"></p>
+               <script>const positionNameElement = document.getElementById("positionNameValue");
+const datails = document.getElementById("datailContent");
+datails.textContent = window.Detaile;
+positionNameElement.textContent = window.positionName;
+
+</script>
+                </h2>
+                <button class="contact-owner-wrapper" id="connectBTN" onclick="window.projectsObject.connect(window.position)">
+                  <h2 class="contact-owner">Contact Owner</h2>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  <script src="/project-info-page.90c92ae8.js"></script></body>
+</html>
